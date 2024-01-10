@@ -70,7 +70,7 @@ jobs:
                   tags: ${{ secrets.docker_repo }}
 
             - name: Deploy on server
-              uses: appleboy/ssh-action@v0.1.10
+              uses: appleboy/ssh-action@v1.0.3
               with:
                   host: ${{ secrets.ssh_host }}
                   username: ${{ secrets.ssh_user }}
